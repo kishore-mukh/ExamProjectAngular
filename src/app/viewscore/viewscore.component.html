@@ -1,0 +1,29 @@
+<div class="topleft">
+    <figure><img src="assets/images/Kanini-Logo.svg" alt="Logo" width="300" height="100" ></figure>
+
+<h1>Result Table </h1>
+<div class="res">
+<table class="content-table">
+    <thead>
+      <tr>
+        <th>Student Id</th>
+        <th>Student Name</th>
+        <th>Subject Name</th>
+        <th>DateofExam</th>
+        <th>QuestionPaperCode</th>
+        <th>Total Score</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let re of lresult">
+      <tr>
+        <td>{{re.studentid}}</td>
+        <td>{{re.studentName}}</td>
+        <td>{{re.subjectName}}</td>
+        <td>{{re.dateofExam}}</td>
+        <td>{{re.questionpapercode}}</td>
+        <td>{{re.scoreObtained}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>

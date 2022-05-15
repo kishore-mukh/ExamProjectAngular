@@ -1,0 +1,90 @@
+<style >
+    .topleft 
+    {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+      
+    }
+    .admin
+    {
+      position: absolute;
+      top: 50px;
+      left: 500px; 
+      font-size: 15px; 
+
+    }
+    .stud
+    {
+      position: absolute;
+      top: 50px;
+      left: 750px; 
+      font-size: 15px; 
+    }
+    .topright 
+    {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+      
+    }
+    
+</style>
+
+
+<div class="main" >
+    <!-- Sing in  Form -->
+
+    <!-- <div class="topleft">
+            <figure><img src="assets/images/Kanini-Logo.svg" alt="Logo" width="300" height="100" ></figure>
+        </div> -->
+        <div class="admin">
+            <a (click)="adminlog()"><img src="assets/images/admin.jfif" alt="Logo" width="70" height="70" style="border-radius: 10px;"></a>
+            <B>Admin</B>
+            <a (click)="adminlog()" ></a>
+        </div>
+        <div class="stud">
+          <a (click)="studlog()" ><img src="assets/images/student.jfif" alt="Logo" width="70" height="70" style="border-radius: 10px; box-shadow: 0 0 8px rgba(33,33,33,.2);"></a>
+            <B>Student</B>
+           <a (click)="studlog()" ></a>
+        </div>
+
+    <div class="topright">
+            <figure><img src="assets/images/Kanini-Logo.svg" alt="Logo" width="300" height="100"></figure>
+    </div>
+    
+    
+    <section class="sign-in">
+        <div class="container" >
+            <div class="signin-content">
+                <div class="signin-image">
+                    <img src="assets/images/signin-image.jpg" alt="sign up image">
+                    <a  (click)="Toregister()" ><B>Create an account</B></a>
+                </div>
+
+                <div class="signin-form">
+                    <h2 class="form-title">Admin Login</h2>
+                    <form [formGroup]="logingrp" (ngSubmit)="login(logingrp.value)" class="register-form" id="login-form">
+                        <div class="form-group">
+                            <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input formControlName="email" type="text" class="form-control" name="your_name" id="your_name" placeholder="Enter Email"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                            <input formControlName="password" type="password" class="form-control" name="your_pass" id="your_pass" placeholder="Password"/>
+                        </div>
+                       <div>
+                            <a (click)="Toforgot()" ><I>Forgot password</I></a>
+                        </div>
+                        <!-- <div>
+                            <button type="submit" [disabled]="!logingrp.valid" class="btn btn-primary">Login</button>
+                        </div> -->
+                        <div class="form-group form-button">
+                            <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+header{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.366),rgba(0, 0, 0, 0.5)), url(../../assets/images/13.webp);
+	height: 100vh;
+	background-size:cover;
+	background-position: center;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 20px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+    /* #transparent */
+	border: 1px solid ;
+	transition : 0.3s ease;
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #00f;
+}
+
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+
+.logo img{
+	float: left;
+	height: auto;
+	width: 180px;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: translate(-50%,-50%);
+	color: #ff8;
+	font-style: italic;
+	font-size: 25px;
+}
+
+.button{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transition: translate(-50%,-50%);
+	color: #ff8;
+}
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.5s ease;
+	top: 62;
+}
+
+.btn:hover{
+	background-color: #5f8;
+	color: #004;
+	font-style: oblique;
+}
