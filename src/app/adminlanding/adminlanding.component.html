@@ -1,0 +1,24 @@
+<header>
+    <div class="main">
+        <div class="logo">
+            <img src="assets/images/k1.png" style="border-radius: 10px;">
+        </div>
+        <ul>
+            <li class="active" ><a href="#" style="border-radius: 10px;">Home</a></li>
+            <li><a href="#" style="border-radius: 10px;">Dashboard</a></li>
+            <li><a (click)="results()" style="border-radius: 10px;">Sudents History</a></li>
+            <li><a (click)="Logout()" style="border-radius: 10px;">Logout</a></li>
+        </ul>
+    </div>
+    <div class="title">
+        <h1>WELCOME!</h1>
+    </div>
+
+    <!-- <button type="button" (click)="file.click()">Upload File</button> -->
+    <div class="button">
+        
+        <input type="file" #file placeholder="Choose File" (change)="uploadFile(file.files)" style="display: none;">
+        <a type="button" (click)="file.click()" class="btn">Upload File</a>
+        <a (click)="results()" class="btn">Student Results</a>
+    </div>
+</header>

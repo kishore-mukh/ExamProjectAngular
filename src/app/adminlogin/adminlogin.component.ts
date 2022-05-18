@@ -38,7 +38,7 @@ export class AdminloginComponent implements OnInit {
     this.authenticate.setlogin(formdata.email);
     alert(data.message);
     
-    this.router.navigate(['uploadfile']);
+    this.router.navigate(['adminlanding']);
     this.logingrp.reset();
     }
     else

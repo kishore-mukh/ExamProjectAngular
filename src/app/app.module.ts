@@ -13,6 +13,8 @@ import { UserlandingpageComponent } from './userlandingpage/userlandingpage.comp
 import { FileuploadComponent } from './fileupload/fileupload.component';
 import { ResetpassComponent } from './resetpass/resetpass.component';
 import { ViewscoreComponent } from './viewscore/viewscore.component';
+import { AdminlandingComponent } from './adminlanding/adminlanding.component';
+import { AllstudentresultComponent } from './allstudentresult/allstudentresult.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { ViewscoreComponent } from './viewscore/viewscore.component';
     FileuploadComponent,
     ResetpassComponent,
     ViewscoreComponent,
+    AdminlandingComponent,
+    AllstudentresultComponent,
   ],
   imports: [
     BrowserModule,

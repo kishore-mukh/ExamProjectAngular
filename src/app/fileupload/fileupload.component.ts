@@ -32,10 +32,10 @@ export class FileuploadComponent implements OnInit {
     }
     let fileToUpload=<File>files[0];
     const formData=new FormData();
-    formData.append('file',fileToUpload,"abcd"+"+"+this.mail);
+    formData.append('file',fileToUpload,"sub001"+"+"+this.mail+"+"+fileToUpload.name);
     this.http.post<any>('https://localhost:44355/api/FIleUpload',formData).subscribe(data=>{
-      console.log(data);
-      alert(data);
+      console.log(data.message);
+      alert(data.message);
     })
   }
 }

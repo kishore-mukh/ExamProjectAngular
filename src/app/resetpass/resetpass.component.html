@@ -17,14 +17,16 @@
                         </div>
                         <div class="form-group">
                             <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                            <input type="password" name="passkey" id="pass" [(ngModel)]="b" placeholder="Enter Temp Password" #passkey="ngModel" required/>
+                            <input type="password" name="passkey" id="pass" [(ngModel)]="b" placeholder="Enter Temp Password" pattern="[A-Za-z\d\_\@]{1,20}" #passkey="ngModel" required/>
+                            <span style="font-size: 10px;" class="text-danger" *ngIf="passkey.errors?.['pattern']">Only _, @ ,numeric and charactersa are allowed</span>
                         </div>
                         <div class="form-group">
                             <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                            <input type="password" name="repass" id="re_pass" [(ngModel)]="c" placeholder="Enter New password" #repass="ngModel" required/>
+                            <input type="password" name="repass" id="re_pass" [(ngModel)]="c" pattern="[A-Za-z\d\_\@]{1,20}" placeholder="Enter New password" #repass="ngModel" required/>
+                            <span style="font-size: 10px;" class="text-danger" *ngIf="repass.errors?.['pattern']">Only _, @ ,numeric and charactersa are allowed</span>
                         </div>
-                        
-                        <div class="form-group form-button">
+                        <!-- class="form-group form-button" -->
+                        <div >
                             <input type="submit" name="signup" id="signup" [disabled]="!submitform.valid" class="form-submit" value="Update"/>
                         </div>
                     </form>

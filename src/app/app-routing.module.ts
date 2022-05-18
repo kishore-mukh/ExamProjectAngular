@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminlandingComponent } from './adminlanding/adminlanding.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { AllstudentresultComponent } from './allstudentresult/allstudentresult.component';
 import { FileuploadComponent } from './fileupload/fileupload.component';
 import { ForgotpassComponent } from './forgotpass/forgotpass.component';
 import { ProregisterComponent } from './proregister/proregister.component';
@@ -17,7 +19,9 @@ const routes: Routes = [
   {path:'Userlanding',component:UserlandingpageComponent},
   {path:'uploadfile',component:FileuploadComponent},
   {path:'resetpassword',component:ResetpassComponent},
-  {path:'studentresult',component:ViewscoreComponent}
+  {path:'studentresult',component:ViewscoreComponent},
+  {path:'allstudentresult',component:AllstudentresultComponent},
+  {path:'adminlanding',component:AdminlandingComponent}
 ];
 
 @NgModule({
