@@ -1,0 +1,47 @@
+<form #fileupload="ngForm" (ngSubmit)="onsubmit()">
+    <table id="subject" cellpadding="5" width="50%" bgcolor="white" align="center" cellspacing="5">
+    <tr>
+        <div class="topleft">
+            <figure><img src="assets/images/Kanini-Logo.svg" alt="Logo" width="300" height="100" ></figure>
+            
+        </div>
+    </tr>
+    
+    <tr>
+    <td><b><label for="Course">Choose a Subject to upload file</label></b></td>
+    <td><select id="Course" name="course" [(ngModel)]="subject" #course="ngModel" required>
+    <option value="sub001">C#</option>
+    <option value="sub002">JAVA</option>
+    <option value="sub003">AZURE</option>
+    <option value="sub004">C++</option>
+    <option value="sub005">MS SQL</option>
+    <option value="sub006">ORACLE PLSQL</option>
+    <option value="sub007">.NET</option>
+    <option value="sub001">AWS</option>
+    
+    </select>
+    <span style="font-size: 10px;" class="text-danger" *ngIf="course.errors?.['required']">Please choose a subject to proceed</span>
+    </td>
+    </tr>
+    
+    <tr>
+    <td colspan="2">
+        <input type="file" #file placeholder="Choose File" (change)="uploadFile(file.files)" style="display: none;">
+        <button type="button" style='background-color: #4CAF50; border: none; color: white; padding: 10px 20px; text-align:center; text-decoration:none; display:inline-block; font-size:16px; margin: 1px 1px; cursor: pointer; border-radius:8px;'  [disabled]="!fileupload.valid" (click)="file.click()">Upload File</button>
+    </td>
+    </tr>
+    </table>
+    </form>
+    <table cellpadding="5" width="50%" bgcolor="white" align="center" cellspacing="5">
+        <tr style="text-align: center;">
+            <span ><label style="font-size: 10px;"><br><br><b>**Please follow the below given format carefully<br>And then upload file</b></label></span>
+        </tr>
+        <tr>
+            <div >
+                <figure style="position: center;"><img src="assets/images/questionformat.png" alt="Logo" width="70%" height="70%" class="center" ></figure>
+                
+            </div>
+        </tr>
+    </table>
+
+    

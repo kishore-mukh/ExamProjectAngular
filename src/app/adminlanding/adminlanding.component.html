@@ -13,12 +13,8 @@
     <div class="title">
         <h1>WELCOME!</h1>
     </div>
-
-    <!-- <button type="button" (click)="file.click()">Upload File</button> -->
     <div class="button">
-        
-        <input type="file" #file placeholder="Choose File" (change)="uploadFile(file.files)" style="display: none;">
-        <a type="button" (click)="file.click()" class="btn">Upload File</a>
+        <a type="button" (click)="toUploadPage()" class="btn">Upload File</a>
         <a (click)="results()" class="btn">Student Results</a>
     </div>
 </header>

@@ -48,5 +48,8 @@ export class AdminlandingComponent implements OnInit {
       alert(data.message);
     })
   }
+  toUploadPage():void{
+    this.router.navigate(['quizpage']);
+  }
 
 }

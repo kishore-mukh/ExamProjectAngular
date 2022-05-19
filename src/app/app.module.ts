@@ -15,6 +15,7 @@ import { ResetpassComponent } from './resetpass/resetpass.component';
 import { ViewscoreComponent } from './viewscore/viewscore.component';
 import { AdminlandingComponent } from './adminlanding/adminlanding.component';
 import { AllstudentresultComponent } from './allstudentresult/allstudentresult.component';
+import { QuizpageComponent } from './quizpage/quizpage.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { AllstudentresultComponent } from './allstudentresult/allstudentresult.c
     ViewscoreComponent,
     AdminlandingComponent,
     AllstudentresultComponent,
+    QuizpageComponent,
   ],
   imports: [
     BrowserModule,

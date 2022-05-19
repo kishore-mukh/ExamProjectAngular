@@ -6,6 +6,7 @@ import { AllstudentresultComponent } from './allstudentresult/allstudentresult.c
 import { FileuploadComponent } from './fileupload/fileupload.component';
 import { ForgotpassComponent } from './forgotpass/forgotpass.component';
 import { ProregisterComponent } from './proregister/proregister.component';
+import { QuizpageComponent } from './quizpage/quizpage.component';
 import { ResetpassComponent } from './resetpass/resetpass.component';
 import { StudentloginComponent } from './studentlogin/studentlogin.component';
 import { UserlandingpageComponent } from './userlandingpage/userlandingpage.component';
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:'resetpassword',component:ResetpassComponent},
   {path:'studentresult',component:ViewscoreComponent},
   {path:'allstudentresult',component:AllstudentresultComponent},
-  {path:'adminlanding',component:AdminlandingComponent}
+  {path:'adminlanding',component:AdminlandingComponent},
+  {path:'quizpage',component:QuizpageComponent}
 ];
 
 @NgModule({
